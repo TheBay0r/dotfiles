@@ -1,4 +1,4 @@
-function makepr
+function makepr --description "Create a pull request of current branch directly from the terminal"
   if [ ! (git rev-parse --is-inside-work-tree 2>/dev/null) ]
     echo "Not a git repository"
     return
